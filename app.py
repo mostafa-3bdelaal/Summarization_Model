@@ -1,9 +1,5 @@
 # text summarization
 
-import os
-os.environ["TRANSFORMERS_NO_TF"] = "1"
-os.environ["TRANSFORMERS_NO_FLAX"] = "1"
-
 import streamlit as st
 from transformers import pipeline, AutoModelForSeq2SeqLM, AutoTokenizer
 
@@ -59,7 +55,6 @@ st.text_area(
     key="input_text"
 )
 
-
 # Summarize button
 if st.button('Summarize'):
     if st.session_state.input_text.strip() == "":
@@ -72,5 +67,6 @@ if st.button('Summarize'):
 
         st.subheader("Summary:")
         st.write(summary)
+
 
 
