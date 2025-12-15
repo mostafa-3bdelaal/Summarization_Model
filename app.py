@@ -74,7 +74,3 @@ if st.button('Summarize'):
         st.write(summary)
 
 
-
-# run code
-# python -m streamlit run "C:\2_ projects\NLP\summarization text\app.py"
-
