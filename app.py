@@ -47,8 +47,6 @@ def generate_chunks(text, max_word=500):
 
     return chunks
 
-
-
 # Streamlit UI
 st.title('Text Summarization App 📄')
 
@@ -85,5 +83,4 @@ with col1:
 
 with col2:
     st.button("Clear", on_click=clear_text)
-
 
