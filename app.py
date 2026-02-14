@@ -76,7 +76,7 @@ with col1:
         else:
             with st.spinner('Summarizing...'):
                 chunks = generate_chunks(st.session_state.input_text)
-                result = model(chunks, max_length=80, min_length=10)
+                result = model(chunks, max_length=100, min_length=10)
                 summary = " ".join([res['summary_text'] for res in result])
             st.subheader("Summary:")
             st.write(summary)
